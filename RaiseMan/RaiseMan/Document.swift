@@ -12,6 +12,8 @@ private var KVOContext: Int = 0
 
 class Document: NSDocument, NSWindowDelegate {
     
+    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var arrayController: NSArrayController!
     dynamic var employees: [Employee] = [] {
         willSet {
             for employee in employees {
@@ -114,6 +116,47 @@ class Document: NSDocument, NSWindowDelegate {
     // Trigger willSet of employees to stop observing
     func windowWillClose(_ notification: Notification) {
         employees = []
+    }
+    
+    // MARK: - Actions
+    @IBAction func addEmployee(sender: NSButton) {
+        let windowController = windowControllers[0]
+        let window = windowController.window!
+        
+        let endedEditing = window.makeFirstResponder(window)
+        if !endedEditing {
+            Swift.print("Unable to end editing")
+            return
+        }
+        
+        let undo: UndoManager = undoManager!
+        
+        // Has an edit occurred already in this event?
+        if undo.groupingLevel > 0 {
+            // Close the last group
+            undo.endUndoGrouping()
+            // Open a new group
+            undo.beginUndoGrouping()
+        }
+        
+        // Create the object
+        let employee = arrayController.newObject() as! Employee
+        
+        // Add it to the array controller's content array
+        arrayController.addObject(employee)
+        
+        // Re-sort (in case the use has sorted a column)
+        arrayController.rearrangeObjects()
+        
+        // Get the sorted array
+        let sortedEmployees = arrayController.arrangedObjects as! [Employee]
+        
+        // Find the object just added
+        let row = sortedEmployees.index(of: employee)!
+        
+        // Begin the edit in the first column
+        Swift.print("starting edit of \(employee) in row \(row)")
+        tableView.editColumn(0, row: row, with: nil, select: true)
     }
 }
 

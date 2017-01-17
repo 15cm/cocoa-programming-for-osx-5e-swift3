@@ -8,7 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="RaiseMan" customModuleProvider="target">
             <connections>
-                <outlet property="arrayController" destination="sB0-37-9bb" id="obL-XY-h0K"/>
+                <outlet property="arrayController" destination="sB0-37-9bb" id="FTh-3B-KjK"/>
+                <outlet property="tableView" destination="shu-Qg-KOs" id="i7F-4W-s0e"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -148,7 +149,7 @@ CA
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="add:" target="sB0-37-9bb" id="hE4-BU-6Ws"/>
+                            <action selector="addEmployeeWithSender:" target="-2" id="zod-jY-xRM"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-wr-4QV">

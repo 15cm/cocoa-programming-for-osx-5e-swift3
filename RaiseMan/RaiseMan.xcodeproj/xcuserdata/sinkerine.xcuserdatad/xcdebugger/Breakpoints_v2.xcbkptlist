@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
+            timestampString = "506312974.007745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "Document"
             landmarkType = "3">
             <Locations>
@@ -73,11 +73,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
+            timestampString = "506312974.007745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "insertObject(_:inEmployeesAtIndex:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -89,11 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
+            timestampString = "506312974.007745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "removeObject(fromEmployeesAtIndex:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -105,11 +105,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
+            timestampString = "506312974.007745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "observeValue(forKeyPath:of:change:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RaiseMan/Document.swift"
+            timestampString = "506312974.007745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "Document"
             landmarkType = "3">
          </BreakpointContent>
@@ -121,27 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
+            timestampString = "506312974.007745"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "Document"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RaiseMan/Document.swift"
-            timestampString = "506279900.941369"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "removeObject(fromEmployeesAtIndex:)"
             landmarkType = "7">
          </BreakpointContent>
