@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E09AC881E2E21AC005C2686 /* Edit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E09AC871E2E21AC005C2686 /* Edit.icns */; };
+		2E09AC8A1E2E2427005C2686 /* test-url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09AC891E2E2427005C2686 /* test-url.swift */; };
 		2EFCBE671E2CE0CB00F0F649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCBE661E2CE0CB00F0F649 /* AppDelegate.swift */; };
 		2EFCBE691E2CE0CB00F0F649 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFCBE681E2CE0CB00F0F649 /* Document.swift */; };
 		2EFCBE6C1E2CE0CB00F0F649 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFCBE6A1E2CE0CB00F0F649 /* Document.xib */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E09AC871E2E21AC005C2686 /* Edit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Edit.icns; sourceTree = "<group>"; };
+		2E09AC891E2E2427005C2686 /* test-url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "test-url.swift"; sourceTree = "<group>"; };
 		2EFCBE631E2CE0CB00F0F649 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EFCBE661E2CE0CB00F0F649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EFCBE681E2CE0CB00F0F649 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
@@ -39,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E09AC861E2E2186005C2686 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E09AC871E2E21AC005C2686 /* Edit.icns */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		2EFCBE5A1E2CE0CB00F0F649 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +71,7 @@
 		2EFCBE651E2CE0CB00F0F649 /* RaiseMan */ = {
 			isa = PBXGroup;
 			children = (
+				2E09AC861E2E2186005C2686 /* Supporting Files */,
 				2EFCBE661E2CE0CB00F0F649 /* AppDelegate.swift */,
 				2EFCBE681E2CE0CB00F0F649 /* Document.swift */,
 				2EFCBE7A1E2D0E5F00F0F649 /* EmploeesArrayController.swift */,
@@ -66,6 +80,7 @@
 				2EFCBE6F1E2CE0CB00F0F649 /* MainMenu.xib */,
 				2EFCBE721E2CE0CB00F0F649 /* Info.plist */,
 				2EFCBE781E2CE23300F0F649 /* Employee.swift */,
+				2E09AC891E2E2427005C2686 /* test-url.swift */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -131,6 +146,7 @@
 			files = (
 				2EFCBE6E1E2CE0CB00F0F649 /* Assets.xcassets in Resources */,
 				2EFCBE6C1E2CE0CB00F0F649 /* Document.xib in Resources */,
+				2E09AC881E2E21AC005C2686 /* Edit.icns in Resources */,
 				2EFCBE711E2CE0CB00F0F649 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EFCBE691E2CE0CB00F0F649 /* Document.swift in Sources */,
+				2E09AC8A1E2E2427005C2686 /* test-url.swift in Sources */,
 				2EFCBE7B1E2D0E5F00F0F649 /* EmploeesArrayController.swift in Sources */,
 				2EFCBE791E2CE23300F0F649 /* Employee.swift in Sources */,
 				2EFCBE671E2CE0CB00F0F649 /* AppDelegate.swift in Sources */,
@@ -306,6 +323,7 @@
 				2EFCBE771E2CE0CB00F0F649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
