@@ -16,10 +16,16 @@ class DieView: NSView {
         }
     }
     
+    var pressed: Bool = false {
+        didSet {
+            needsDisplay = true
+        }
+    }
+    
     override var intrinsicContentSize: NSSize {
         return NSSize(width: 20, height: 20)
     }
-
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
@@ -35,7 +41,7 @@ class DieView: NSView {
         let edgeLength = min(size.width, size.height)
         let padding = edgeLength / 10.0
         let drawingBounds = CGRect(x: 0, y: 0, width: edgeLength, height: edgeLength)
-        let dieFrame = drawingBounds.insetBy(dx: padding, dy: padding)
+        let dieFrame = !pressed ? drawingBounds.insetBy(dx: padding, dy: padding) : drawingBounds.insetBy(dx: 0, dy: -edgeLength / 40)
         return (edgeLength, dieFrame)
     }
     
@@ -47,7 +53,7 @@ class DieView: NSView {
             NSGraphicsContext.saveGraphicsState()
             let shadow = NSShadow()
             shadow.shadowOffset = NSSize(width: 0, height: -1)
-            shadow.shadowBlurRadius = edgeLength / 20
+            shadow.shadowBlurRadius = pressed ? edgeLength / 100 : edgeLength / 20
             shadow.set()
             let cornerRadius: CGFloat = edgeLength / 5.0
             // Draw the rounded shape of the dir profile:
@@ -79,5 +85,22 @@ class DieView: NSView {
                 drawDot(u: 1, v: 0.5)
             }
         }
+    }
+    
+    func randomize() {
+            intValue = Int(arc4random_uniform(5)) + 1
+    }
+    
+    override func mouseUp(with event: NSEvent) {
+        if event.clickCount == 2{
+            randomize()
+        }
+        pressed = false
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        let dieFrame = metricsFor(size: bounds.size).dieFrame
+        let pointInview = convert(event.locationInWindow, from: nil)
+        pressed = dieFrame.contains(pointInview)
     }
 }
